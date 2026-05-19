@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UITS Bank Account Opening</title>
+    <link rel="stylesheet" href="bank.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>UITS Bank Account</h2>
+    <p class="subtitle">Step 3: Services & Final Submission</p>
+
+    <form id="finalForm">
+        <h3>Banking Services</h3>
+        <p class="note">All requested items will be delivered to your nearest branch.</p>
+
+        <div class="checkbox-group">
+            <input type="checkbox"> Request Debit Card (Free for 1st year, charge applies from 2nd year)
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox"> Request Cheque Book (First 10 pages free)
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" checked> Enable App Support (Withdraw and transfer cash via phone app)
+        </div>
+
+        <h3>Signature Verification</h3>
+        <label>Upload Signature <span class="req-black">*</span> <br><small class="note">(Must match your provided govt document. You can change it later if you prefer another signature from document.)</small></label>
+        <input type="file">
+
+        <h3>Terms and Conditions</h3>
+        <p class="note">By submitting this application, you agree to the UITS Bank terms, conditions, and standard account charges.</p>
+
+        <div class="info">
+            <p>Tel: 09678 008487 | Mobile: 01939 915209</p>
+            <p>Web: <a href="https://uits.ac.bd/" target="_blank">www.uits.edu.bd</a> | Email: info@uits.edu.bd</p>
+        </div>
+
+        <button type="button" class="btn btn-back" onclick="goToStep2()">Previous Page</button>
+        <button type="button" class="btn btn-submit" onclick="goToStep4()">Submit Application</button>
+    </form>
+</div>
+
+<script src="bank.js"></script>
+</body>
+</html>

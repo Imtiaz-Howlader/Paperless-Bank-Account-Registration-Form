@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #a8c6df;
+    margin: 0;
+    padding: 20px;
+    color: #222;
+}
+
+.container {
+    max-width: 550px;
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+h2, h3 {
+    color: #1a4d8c;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: #555;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.req-red {
+    color: red;
+}
+
+.req-black {
+    color: black;
+}
+
+.note {
+    color: #666;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="tel"], select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+}
+
+input[type="file"] {
+    margin-top: 5px;
+}
+
+.radio-group, .checkbox-group {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background: #295892;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-back {
+    background: #973939;
+}
+
+.btn-submit {
+    background: #388d38;
+}
+
+.info {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 13px;
+}
+
+.info a {
+    color: #a03333;
+    text-decoration: none;
+}
+
+#msgBox {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid green;
+    background: #e6ffe6;
+}
+
+.success-text {
+    color: green;
+}

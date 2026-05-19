@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UITS Bank Account Opening</title>
+    <link rel="stylesheet" href="bank.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>UITS Bank Account</h2>
+    <p class="subtitle">Step 2: Financial & Nominee Details</p>
+
+    <form>
+        <h3>Financial Information</h3>
+        <label>Income Source <span class="req-black">*</span></label>
+        <select>
+            <option value="">Select Source</option>
+            <option value="Service Holder">Service Holder</option>
+            <option value="Business">Business</option>
+            <option value="Landlord">Landlord</option>
+        </select>
+
+        <label>Expected Monthly Transaction <span class="req-black">*</span></label>
+        <input type="number" placeholder="Amount in BDT">
+
+        <label>Income Source Certificate <br><small class="note">(If your monthly transaction crosses 100,000 BDT, please provide an income certificate)</small></label>
+        <input type="file">
+
+        <label>TIN Certificate <small class="note">(Optional)</small></label>
+        <input type="file">
+
+        <h3>Nominee Information</h3>
+        <label>Nominee Name <span class="req-black">*</span></label>
+        <input type="text">
+
+        <label>Relation with Nominee <span class="req-black">*</span></label>
+        <select>
+            <option value="">Select Relation</option>
+            <option value="Spouse">Spouse</option>
+            <option value="Father">Father</option>
+            <option value="Mother">Mother</option>
+            <option value="Sibling">Sibling</option>
+            <option value="Child">Child</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label>Nominee's Father Name <span class="req-black">*</span></label>
+        <input type="text">
+
+        <label>Nominee's Mother Name <span class="req-black">*</span></label>
+        <input type="text">
+
+        <label>Nominee Document Type <span class="req-black">*</span></label>
+        <select>
+            <option value="">Select Document</option>
+            <option value="BirthCertificate">Birth Certificate</option>
+            <option value="NID">National ID (Voter ID)</option>
+            <option value="Passport">Passport</option>
+            <option value="DrivingLicence">Driving Licence</option>
+        </select>
+
+        <label>Nominee Document Number <span class="req-black">*</span></label>
+        <input type="text">
+
+        <label>Upload Nominee Document <span class="req-black">*</span></label>
+        <input type="file">
+
+        <label>Nominee Image <span class="req-black">*</span></label>
+        <input type="file">
+
+        <button type="button" class="btn btn-back" onclick="goToStep1()">Previous Page</button>
+        <button type="button" class="btn" onclick="goToStep3()">Next Page</button>
+    </form>
+</div>
+
+<script src="bank.js"></script>
+</body>
+</html>
