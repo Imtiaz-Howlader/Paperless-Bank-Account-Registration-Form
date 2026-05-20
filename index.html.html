@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UITS Bank Account Opening</title>
+    <link rel="stylesheet" href="bank.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>UITS Bank Account</h2>
+    <p class="subtitle">Step 1: Personal & Identity Information</p>
+
+    <form>
+        <label>Select Product <span class="req-red">*</span></label>
+        <select required>
+            <option value="">Select Account Type</option>
+            <option value="Savings">Savings Account</option>
+            <option value="Current">Current Account</option>
+            <option value="StudentUnder18">Student Minor Account (Under 18)</option>
+            <option value="Student18to25">Student Major Account (18-25)</option>
+            <option value="Freelancer">Freelancer Account</option>
+            <option value="NonResident">Non-Resident Bangladeshi Account</option>
+        </select>
+
+        <label>Do you have another account in UITS? <span class="req-black">*</span></label>
+        <div class="radio-group">
+            <input type="radio" name="hasAccount" value="Yes"> Yes
+            <input type="radio" name="hasAccount" value="No"> No
+        </div>
+
+        <label>Existing UITS Bank Account No (if yes) <span class="req-black">*</span></label>
+        <input type="number">
+
+        <label>Full Name <span class="req-red">*</span></label>
+        <input type="text" required>
+
+        <label>Mobile Number <span class="req-red">*</span> <br><small class="note">(An OTP will be sent to this number for verification)</small></label>
+        <input type="tel" required>
+
+        <label>Email ID <span class="req-black">*</span></label>
+        <input type="email">
+
+        <label>Date of Birth <span class="req-red">*</span></label>
+        <input type="text" placeholder="dd/mm/yyyy">
+
+        <label>Gender <span class="req-black">*</span></label>
+        <div class="radio-group">
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+        </div>
+
+        <label>Marital Status <span class="req-black">*</span></label>
+        <select>
+            <option value="">Select Status</option>
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="Divorced">Divorced</option>
+        </select>
+
+        <label>Father's Name <span class="req-black">*</span></label>
+        <input type="text">
+
+        <label>Mother's Name <span class="req-black">*</span></label>
+        <input type="text">
+
+        <label>Profession <span class="req-black">*</span></label>
+        <input type="text">
+
+        <label>Division <span class="req-black">*</span></label>
+        <select>
+            <option value="">Select Division</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Chattogram">Chattogram</option>
+            <option value="Rajshahi">Rajshahi</option>
+            <option value="Khulna">Khulna</option>
+            <option value="Barishal">Barishal</option>
+            <option value="Sylhet">Sylhet</option>
+            <option value="Rangpur">Rangpur</option>
+            <option value="Mymensingh">Mymensingh</option>
+        </select>
+
+        <label>Address <span class="req-black">*</span></label>
+        <textarea rows="2"></textarea>
+
+        <label>Nearest Branch <span class="req-black">*</span></label>
+        <select>
+            <option value="">Select Branch</option>
+            <option value="Nayanagar Branch">Nayanagar Branch</option>
+            <option value="Sayeednagar Branch">Sayeednagar Branch</option>
+            <option value="Gulshan Branch">Gulshan Branch</option>
+            <option value="Banani Branch">Banani Branch</option>
+        </select>
+
+        <label>Identity Document Type <span class="req-black">*</span></label>
+        <select>
+            <option value="">Select Document</option>
+            <option value="BirthCertificate">Birth Certificate</option>
+            <option value="NID">National ID (Voter ID)</option>
+            <option value="DrivingLicence">Driving Licence</option>
+            <option value="Passport">Passport</option>
+        </select>
+
+        <label>Identity Document Number <span class="req-black">*</span></label>
+        <input type="text">
+
+        <label>Upload Document (Front Side) <span class="req-black">*</span></label>
+        <input type="file">
+
+        <label>Upload Document (Back Side) <span class="req-black">*</span></label>
+        <input type="file">
+
+        <label>Upload Your Image <span class="req-black">*</span> <br><small class="note">(Ensure you are not wearing glasses)</small></label>
+        <input type="file">
+
+        <button type="button" class="btn" onclick="goToStep2()">Next Page</button>
+    </form>
+</div>
+
+<script src="bank.js"></script>
+</body>
+</html>
